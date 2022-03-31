@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Grid using Flexbox</title>
+        
+        <style>
+            .container {
+                max-width: 960px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+
+            .row {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+            }
+
+            .column {
+                flex-basis: 20%;
+                box-sizing: border-box;
+                padding: 10px;
+                
+            }
+
+        
+
+            .box {
+                height: 144px;
+                background-color: #4076c5;
+                background-image: url("placeholder-image.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                border-radius: 10%;
+                margin-bottom: 50px;
+                  
+                 }
+
+            
+
+            p {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                .column {
+                    flex-basis: 33.33%;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .column {
+                    flex-basis: 50%;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+
+            @media screen and (max-width: 414px) {
+                .column {
+                    flex-basis: 100%;
+                }
+                p {
+                    font-size: 22px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        
+
+        <div class="container">
+            <h1> Galerry heading </h1>
+           
+            <div class="row">
+                <div class="column">
+                    <div class="box">
+                         </div>              
+                </div>
+                <div class="column">
+                    <div class="box"></div>
+                </div>
+                <div class="column">
+                    <div class="box"></div>
+                </div>
+                <div class="column">
+                    <div class="box"></div>
+                </div>
+                <div class="column">
+                    <div class="box"></div>
+                </div>
+                <div class="column">
+                    <div class="box"></div>
+                </div>
+                <div class="column">
+                    <div class="box"></div>
+                </div>
+                <div class="column">
+                    <div class="box"></div>
+                </div>
+                <div class="column">
+                    <div class="box"></div>
+                </div>
+                <div class="column">
+                    <div class="box"></div>
+                </div>
+            </div> <!--row-->
+
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deleniti nulla vitae obcaecati enim natus placeat laboriosam recusandae earum nam? Aspernatur cum facilis eligendi consequuntur veniam, maiores exercitationem molestias quos porro reiciendis nihil dicta dolorem error sapiente doloremque autem nostrum rerum odit deleniti, tempora enim vel. Vitae odit veniam dignissimos inventore unde, neque maiores molestiae consectetur adipisci at, tempora eum, mollitia nisi. Corrupti inventore at deserunt, sint eum possimus libero asperiores placeat voluptatibus, minus eaque dolorem enim ullam iusto quasi. Laudantium rerum totam quas et esse quod officiis consequatur id minus, sed, voluptatem temporibus eveniet? Culpa doloribus consequuntur magni nisi?</p>
+                
+
+        </div> <!--container-->
+    </body>
+
+</html>
